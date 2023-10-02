@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programming Foundations CA</title>
-    <link href='css/style.css' rel='stylesheet' />
-    <link rel='icon' href='data:;base64,=' />
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
 
-<body>
+  <body>
+    <div id="buttonContainer">
+      <button id="startButton">Start Car</button>
+      <button id="stopButton">Stop Car</button>
+    </div>
 
-    <script src="js/script.js"></script>
-</body>
+    <div id="messageDisplay"></div>
 
+    <script src="js/MyCar.js"></script>
+    <script>
+      // Create an instance of MyCar object
+      const carInstance = Object.create(MyCar);
+
+      // Event listener for the "Start Car" button
+      document
+        .getElementById("startButton")
+        .addEventListener("click", function () {
+          carInstance.start();
+        });
+
+      // Event listener for the "Stop Car" button
+      document
+        .getElementById("stopButton")
+        .addEventListener("click", function () {
+          carInstance.stop();
+        });
+    </script>
+  </body>
 </html>
