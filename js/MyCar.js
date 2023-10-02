@@ -15,6 +15,14 @@ const myCar = {
     ],
 
     //function to start the car 
+    start: function () {
+        if (!this.isRunning) {
+            this.isRunning = true;
+            console.log("The car is running. Vrom,Vrooom!");
+        } else {
+            console.log("The car is already running.")
+        }
+    },
 
 
 }
