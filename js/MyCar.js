@@ -25,5 +25,11 @@ const myCar = {
     },
 
 //Function to stop car 
+stop: function() {
+    if(this.isRunning) {
+        this.isRunning = false; 
+    
+    }
+}
 
 }
