@@ -1,4 +1,4 @@
-const myCar = {
+const MyCar = {
     year: 2018,
     make: "Citroen",
     engine: "PureTech 110 hp",

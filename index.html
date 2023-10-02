@@ -16,11 +16,22 @@
 
     <script src="js/MyCar.js"></script>
     <script>
-      //Create an instance of MyCar object
+      // Create an instance of MyCar object
       const carInstance = Object.create(MyCar);
 
-      //Event listener for the "Start Car" button
-      document.getElementByld(startButton);
+      // Event listener for the "Start Car" button
+      document
+        .getElementById("startButton")
+        .addEventListener("click", function () {
+          carInstance.start();
+        });
+
+      // Event listener for the "Stop Car" button
+      document
+        .getElementById("stopButton")
+        .addEventListener("click", function () {
+          carInstance.stop();
+        });
     </script>
   </body>
 </html>
