@@ -2,3 +2,24 @@ body {
 	font-family: sans-serif;
 	padding: 1em 3em;
 }
+
+#startButton {
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: none;
+	border-radius: 50%;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#stopButton {
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: none;
+	border-radius: 50%;
+	padding: 10px 20px;
+	cursor: pointer;
+
+}
