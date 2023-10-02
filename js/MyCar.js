@@ -29,7 +29,8 @@ stop: function() {
     if(this.isRunning) {
         this.isRunning = false; 
         console.log("The car has stopped.")
-    
+    } else {
+        console.log ("The car is not running.");
     }
 }
 
