@@ -24,5 +24,6 @@ const myCar = {
         }
     },
 
+//Function to stop car 
 
 }
