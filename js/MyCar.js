@@ -34,4 +34,4 @@ stop: function() {
     }
 }
 
-}
+};
