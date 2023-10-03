@@ -13,7 +13,7 @@ Properties
 1. Year (Number): The manufacturing year of the car (e.g., 2018).
 2. Make(String): The car maufacturer (e.g.,"Citroen").
 3. Transmission (String): The transmition type (e.g., "Automatic")
-4. Engine (String): The type ogf engine installed (e.g., "PureTech 100hp")
+4. Engine (String): The type ogf engine installed (e.g., "PureTech 110hp")
 5. IsRunning (Boolean) : Indicates whether the car is currentley running (true) or not (false).
 6. Features (Arrey): An arrey of features and options avalible for the car, including:
 
