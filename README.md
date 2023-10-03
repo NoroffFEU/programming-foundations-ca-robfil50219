@@ -1,5 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12059716&assignment_repo_type=AssignmentRepo)
-
 # Programming Foundations CA
 
 MyCar Object
@@ -8,7 +6,7 @@ This Javascript object describes a car, providing information about its specific
 
 Description
 
-The 'MyCar' object represents my Citoen car model from the year 2018 with specific features and options.
+The 'MyCar' object represents my Citroen car model from the year 2018 with specific features and options.
 
 Properties
 
@@ -31,3 +29,32 @@ Methods
 
 1. Start(function): Start the car's engine. If the car is not running, it sets 'isRunning' to true and logs a message indicating that the car is running. If the car is already running, it logs a message indicating that the car is already running.
 2. Stop(function): Stops the car's engine. If the car is running, it sets 'isRunning' to false and logs a message indicating that the car has stopped. If the car is not running, it logs a message indicating that the car is not running.
+
+HTML Structure
+
+The web page's HTML structure ('index.html') includes:
+
+1. Two buttons for start and stopping the car within the '<div id="buttonContainer">' element.
+2. A '<div id="messagedisplay"> element for displaying messages about the ca's status.
+
+The CSS Styles applied to the buttons and container ('css/styles.css') include:
+
+1. font-size: Set to 32px for large text.
+2. text-shadow: Adds a subtle shadow to create a 3D effect.
+3. background-color: Red background color for the buttons.
+4. color: White text color for high visibility.
+5. border: A 1px solid white border around the buttons.
+6. border-radius: Set to 50% to create circular buttons.
+7. padding: Large padding adds space around the button text.
+8. cursor: Changes to a pointer when hovering to indicate clickability.
+9. box-shadow: Provides a subtle button depth effect.
+10. transition: Smooth transition for the box shadow on hover.
+
+Usage
+
+1. Clone this repository to your local machine: https://github.com/NoroffFEU/programming-foundations-ca-robfil50219.git
+   or open this netlify link to view the website https://robfil-programming-foundations-ca.netlify.app.
+2. Open the 'index.html' file in a web browser (Chrome)
+3. Click the "Start Car" button to start the car.
+4. Click the "Stop Car" Button to stop the car.
+5. View console.log messages to see the car's status.
