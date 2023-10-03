@@ -9,3 +9,24 @@ This Javascript object describes a car, providing information about its specific
 Description
 
 The 'MyCar' object represents my Citoen car model from the year 2018 with specific features and options.
+
+Properties
+
+1. Year (Number): The manufacturing year of the car (e.g., 2018).
+2. Make(String): The car maufacturer (e.g.,"Citroen").
+3. Transmission (String): The transmition type (e.g., "Automatic")
+4. Engine (String): The type ogf engine installed (e.g., "PureTech 100hp")
+5. IsRunning (Boolean) : Indicates whether the car is currentley running (true) or not (false).
+6. Features (Arrey): An arrey of features and options avalible for the car, including:
+
+Air Conditioning
+Bluetooth Connectivity
+Apple Carplay
+GPS Navigation
+Leather Seats
+Electric Memory Seats
+Sunroof
+
+Methods
+
+1. Start(function): Start the car's engine. If the car is not running, it sets 'isRunning'
