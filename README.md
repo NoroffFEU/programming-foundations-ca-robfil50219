@@ -49,6 +49,7 @@ The CSS Styles applied to the buttons and container ('css/styles.css') include:
 8. cursor: Changes to a pointer when hovering to indicate clickability.
 9. box-shadow: Provides a subtle button depth effect.
 10. transition: Smooth transition for the box shadow on hover.
+11. shrinking effect on buttons when clicked
 
 Usage
 
