@@ -35,3 +35,10 @@ stop: function() {
 }
 
 };
+
+//Refereces to the audi and buttons
+const engineSound = document.getElementById ("engineSound"); 
+const startButton = document.getElementById ("startButton"); 
+const stopButton = document.getElementById ("stopButton") 
+
+//Functions to start the carand play audio 
