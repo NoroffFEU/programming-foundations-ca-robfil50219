@@ -54,5 +54,4 @@ stopButton.addEventListener("click", function(){
     engineSound.pause(); 
     engineSound.currentTime = 0; 
     MyCar.stop();
-}
-)
+}); 
