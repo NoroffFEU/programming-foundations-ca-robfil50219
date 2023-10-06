@@ -41,4 +41,10 @@ const engineSound = document.getElementById ("engineSound");
 const startButton = document.getElementById ("startButton"); 
 const stopButton = document.getElementById ("stopButton") 
 
-//Functions to start the carand play audio 
+//Functions to start the car and play audio 
+startButton.addEventListener("click", function(){
+if(engineSound.paused) {
+    engineSound.play();
+}
+MyCar.start();
+}); 
