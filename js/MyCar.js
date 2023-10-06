@@ -14,44 +14,45 @@ const MyCar = {
         "Sunroof",
     ],
 
-    //function to start the car 
+    // Function to start the car 
     start: function () {
         if (!this.isRunning) {
             this.isRunning = true;
-            console.log("The car is running. Vrom,Vrooom!");
+            console.log("The car is running. Vroom, Vroom!");
         } else {
-            console.log("The car is already running.")
+            console.log("The car is already running.");
         }
     },
 
-//Function to stop car 
-stop: function() {
-    if(this.isRunning) {
-        this.isRunning = false; 
-        console.log("The car has stopped.")
-    } else {
-        console.log ("The car is not running.");
+    // Function to stop car 
+    stop: function() {
+        if(this.isRunning) {
+            this.isRunning = false; 
+            console.log("The car has stopped.");
+        } else {
+            console.log ("The car is not running.");
+        }
     }
-}
-
 };
 
-//Refereces to the audi and buttons
-const engineSound = document.getElementById ("engineSound"); 
-const startButton = document.getElementById ("startButton"); 
-const stopButton = document.getElementById ("stopButton") 
+// References to the audio and buttons
+const engineSound = document.getElementById("engineSound");
+const startButton = document.getElementById("startButton");
+const stopButton = document.getElementById("stopButton");
 
-//Functions to start the car and play audio 
+// Event listener to start the car and play audio when "Start Car" is clicked
 startButton.addEventListener("click", function(){
-if(engineSound.paused) {
-    engineSound.play();
-}
-MyCar.start();
-}); 
+    if (engineSound.paused) {
+        engineSound.play();
+    }
+    MyCar.start();
+    carIsRunning = true;
+});
 
-//Function to stop the car an audio 
+// Event listener to stop the car and audio when "Stop Car" is clicked
 stopButton.addEventListener("click", function(){
-    engineSound.pause(); 
-    engineSound.currentTime = 0; 
+    engineSound.pause();
+    engineSound.currentTime = 0;
     MyCar.stop();
-}); 
+    carIsRunning = false;
+});
