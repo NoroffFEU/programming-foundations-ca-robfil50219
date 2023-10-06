@@ -48,3 +48,11 @@ if(engineSound.paused) {
 }
 MyCar.start();
 }); 
+
+//Function to stop the car an audio 
+stopButton.addEventListener("click", function(){
+    engineSound.pause(); 
+    engineSound.currentTime = 0; 
+    MyCar.stop();
+}
+)
