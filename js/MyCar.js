@@ -6,7 +6,7 @@ const MyCar = {
     isRunning: false, 
     features: [
         "Air Conditioning",
-        "Bluetooth Connectivety", 
+        "Bluetooth Connectivity", 
         "Apple Carplay",
         "GPS Navigation",
         "Leather Seats",
@@ -19,6 +19,10 @@ const MyCar = {
         if (!this.isRunning) {
             this.isRunning = true;
             console.log("The car is running. Vroom, Vroom!");
+            if (engineSound.paused) {
+                engineSound.play();
+            }
+            carIsRunning = true;
         } else {
             console.log("The car is already running.");
         }
@@ -29,30 +33,14 @@ const MyCar = {
         if(this.isRunning) {
             this.isRunning = false; 
             console.log("The car has stopped.");
+            engineSound.pause();
+            engineSound.currentTime = 0;
+            carIsRunning = false;
         } else {
             console.log ("The car is not running.");
         }
     }
 };
 
-// References to the audio and buttons
-const engineSound = document.getElementById("engineSound");
-const startButton = document.getElementById("startButton");
-const stopButton = document.getElementById("stopButton");
 
-// Event listener to start the car and play audio when "Start Car" is clicked
-startButton.addEventListener("click", function(){
-    if (engineSound.paused) {
-        engineSound.play();
-    }
-    MyCar.start();
-    carIsRunning = true;
-});
 
-// Event listener to stop the car and audio when "Stop Car" is clicked
-stopButton.addEventListener("click", function(){
-    engineSound.pause();
-    engineSound.currentTime = 0;
-    MyCar.stop();
-    carIsRunning = false;
-});
